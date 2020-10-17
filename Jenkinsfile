@@ -1,12 +1,15 @@
 pipeline{
     agent any
 
+    tools {
+        maven 'maven_3.6.3'
+        jdk 'jdk8'
+    }
+
     stages{
         stage("verify"){
             steps{
-                withMaven('maven_3.6.3') {
                     sh 'mvn version'
-                }
             }
         }
     }
