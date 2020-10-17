@@ -7,15 +7,34 @@ pipeline{
     }
 
     stages{
-        stage("verify"){
+        stage("clean"){
             steps{
-                    sh 'mvn version'
+                sh 'mvn clean'
+            }
+        }
+
+        stage("compile") {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+
+        stage("test") {
+            steps {
+                sh 'mvn test'
+            }
+        }
+
+        stage("package") {
+            steps {
+                sh 'mvn package'
             }
         }
     }
+
     post{
         always{
-            echo "========always========"
+            cleanWs()
         }
         success{
             echo "========pipeline executed successfully ========"
