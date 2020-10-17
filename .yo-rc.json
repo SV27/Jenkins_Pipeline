@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sv27.learn"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "microservice",
+    "baseName": "JenkinsPipeline",
+    "packageName": "com.sv27.learn",
+    "packageFolder": "com/sv27/learn",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MzIxNzBhZWU0YjA1OWIwOWM0ODNjM2UwZTdmNTZlODBlMTI5MWQxMjY5NWU1OGI5OTQ2ZDc1NjVhNTYzMzdhZTNlYTU1NmNmYTVmNGEwYTQ3ODY3YWRhNDc2NWI1NzYzMTVlMmFmMWFlYWE4Y2JkZTA5YzNmY2QwNDhhMjI1NDM=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1602906049437,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
