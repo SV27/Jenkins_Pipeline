@@ -4,7 +4,9 @@ pipeline{
     stages{
         stage("verify"){
             steps{
-                sh 'mvn version'
+                withMaven('maven_3.6.3') {
+                    sh 'mvn version'
+                }
             }
         }
     }
